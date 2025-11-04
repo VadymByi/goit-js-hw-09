@@ -1,0 +1,67 @@
+input,
+textarea {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  min-width: 360px;
+  min-height: 40px;
+  padding: 8px 16px;
+  outline: none;
+  background-color: transparent;
+  transition: border 0.2s ease;
+}
+
+input:hover,
+textarea:hover {
+  border: 1px solid #000;
+}
+
+input:focus,
+textarea:focus {
+  border: 1px solid #000;
+}
+
+input::placeholder {
+  color: #2e2f42;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  display: block;
+  min-height: 40px;
+  border-radius: 8px;
+  padding: 8px 16px;
+  background: #4e75ff;
+  font-weight: 500;
+  color: #fff;
+  font: inherit;
+  transition: background 0.2s ease;
+}
+
+button:hover,
+button:focus {
+  background: #6c8cff;
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 8px;
+  padding: 24px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.feedback-form label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 8px;
+}
+
+label + button {
+  margin-top: 8px;
+}
